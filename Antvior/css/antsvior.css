@@ -23,8 +23,8 @@ body {
 }
 .tutorial .slider {
   width: 100%;
-  height: 600px;
-  background-color: #F03861;
+  height: 650px;
+  background-color: transparent;
 }
 .tutorial .information {
   width: 100%;
@@ -68,3 +68,13 @@ body {
   cursor: pointer;
   background-color: whitesmoke;
 }
+
+  .simulation {
+		  width: 600px;
+		  height: 600px;
+		  border: 1px solid #DEDEDE;
+		  display: block;
+		  margin: 0 auto;
+		  padding: 10px;
+		  margin-bottom:20px;
+		}
