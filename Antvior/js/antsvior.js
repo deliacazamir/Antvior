@@ -1,6 +1,14 @@
 
+var context; 
 var _data; // data from previous update
 
+var pattern;
+/*
+ *  var image = new Image();
+        image.src = '../image/ant.png';
+         var context = canvas.getContext("2d"); 
+        var pattern=context.createPattern(image,'no-repeat');
+ */
 function draw_grid(data) {
     var width = 600;
     var height = 600;
@@ -16,8 +24,8 @@ function draw_grid(data) {
         canvas.height = height;
         document.getElementsByTagName('body')[0].appendChild(canvas);
     }
-
-    var context = canvas.getContext("2d");
+   
+    context = canvas.getContext("2d");
     
     function draw_cells(){
         
@@ -53,8 +61,11 @@ function update_grid(data) {
 
 
 var color_for_cell = function (cell) {
+   
+
     if (cell.has_ant()) {
-        return cell.ant.has_food ? "rgb(159,248,101)" : "rgb(0,0,0)";
+       
+        return cell.ant.has_food ? "rgb(159,248,101)" : pattern;
     }
     else if (cell.food > 0) {
         return "rgba(86,169,46,"+Math.pow(cell.food/10,0.5)+")";
