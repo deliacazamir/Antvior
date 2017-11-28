@@ -160,8 +160,11 @@
       }
     }
     
-    score.append('You got ' + numCorrect + ' questions out of ' +
-                 questions.length + ' right!!!');
+    
+    if (numCorrect == 5) 
+        score.append('Damn, you did it! <3')
+      else
+        score.append('What you doing? Go back to study! :(')
     return score;
   }
 })();
