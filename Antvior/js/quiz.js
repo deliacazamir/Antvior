@@ -1,23 +1,23 @@
 (function() {
   var questions = [{
-    question: "What is 2*5?",
-    choices: [2, 5, 10, 15],
+    question: "Ants breathe in oxygen through:",
+    choices: ["lungs", "eyes", "spiracles", "ears"],
     correctAnswer: 2
   }, {
-    question: "What is 3*6?",
-    choices: [3, 18, 9, 4],
-    correctAnswer: 1
-  }, {
-    question: "What is 8*9?",
-    choices: [72, 99, 108, 134],
+    question: "Ants to hooman:",
+    choices: ["1 million per human", "100.000 per human", "500.000 per human", "1 billion per human"],
     correctAnswer: 0
   }, {
-    question: "What is 1*7?",
-    choices: [4, 5, 6, 7],
-    correctAnswer: 3
+    question: "Ants have:",
+    choices: ["1 stomach" ,"2 stomachs", "4 stomachs", "no stomach"],
+    correctAnswer: 1
   }, {
-    question: "What is 8*8?",
-    choices: [20, 30, 40,64],
+    question: "Ants can:",
+    choices: ["swim", "talk", "play games", "jump 2 metters"],
+    correctAnswer: 0
+  }, {
+    question: "How long can black ants live?",
+    choices: ["4 weeks","two months","one year","15 years"],
     correctAnswer: 3
   }];
   
@@ -90,7 +90,7 @@
     var header = $('<h2>Question ' + (index + 1) + ':</h2>');
     qElement.append(header);
     
-    var question = $('<p>').append(questions[index].question);
+    var question = $('<p style="color:yellow;">').append(questions[index].question);
     qElement.append(question);
     
     var radioButtons = createRadios(index);
@@ -151,7 +151,7 @@
   
   // Computes score and returns a paragraph element to be displayed
   function displayScore() {
-    var score = $('<p>',{id: 'question'});
+    var score = $('<p style="color:whitesmoke;">',{id: 'question'});
     
     var numCorrect = 0;
     for (var i = 0; i < selections.length; i++) {
