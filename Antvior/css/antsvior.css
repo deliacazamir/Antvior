@@ -26,6 +26,8 @@ article {
   font-family: sans-serif;
   height:100%;
   padding-top: 50px;
+ 
+  align:center;
 }
 
 article p {
@@ -146,7 +148,7 @@ nav a:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
+  max-width: 500px;
   position: relative;
   margin: auto;
 }
