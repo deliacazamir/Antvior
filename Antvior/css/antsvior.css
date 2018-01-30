@@ -468,6 +468,7 @@ canvas {
 
 #ant-footer {
 	background: #111111;
+        position: fixed;
 }
 .stuck {
 	position: fixed;
@@ -477,10 +478,9 @@ canvas {
 	width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 915px) {
 .stuck {
-	position: relative;
-
+    position: fixed;
 }
 }
 

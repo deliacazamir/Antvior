@@ -40,6 +40,7 @@ button {
 
 #container {
     
+    height: 100%;
     width:50%;
     margin:auto;
     padding: 20px 25px 40px 10px;

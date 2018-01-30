@@ -20,8 +20,8 @@ var AntSim;
 		};
 		
 		this._nestPos = {
-			'x': this._height /2+400,
-			'y': this._width/2+300,
+			'x': this._height/2+100,
+			'y': this._width/2+100,
 		}
 		
 	};
@@ -82,7 +82,7 @@ var AntSim;
 			this._ch.setStrokeStyle(116, 79, 36, 0.9);
 			this._ch.setFillStyle(116, 79, 36, 0.9);
 			this._ch.drawShape(_.bind(function(ctx){
-				ctx.arc(this._height /2+400,this._width/2+300, NEST_SIZE, 0, Math.PI * 2);
+				ctx.arc(this._height /2+100,this._width/2+100, NEST_SIZE, 0, Math.PI * 2);
 			}, this), true, true);
                   
                         

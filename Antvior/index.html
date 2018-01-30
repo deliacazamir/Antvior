@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html  manifest="antvior.appcache">
+<html manifest="antvior.appcache">
+  
+
 
     <head>
-        <title>Antivior</title>
+        <title>Antvior</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/antsvior.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+        <script src="js/doubletaptogo.min.js"></script>
+        <script src="canvas-handler.js"></script>
+        <script src="ant.js"></script>
+        <script src="food.js"></script>
+        <script src="pheromone.js"></script>
+        <script src="ant-sim.js"></script>
+        <script src="test.js"></script>
     </head>
 
-    <body>
+    <body style="background: url('image/background_movie.png') center center / cover no-repeat;">
         
     
             <nav id="nav" role="navigation">
                 <a href="#nav" title="Show navigation">Show navigation</a>
                 <a href="#" title="Hide navigation">Hide navigation</a>
                 <ul class="clearfix">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="game.html">Simulator</a></li>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="game.html">Simulator</a></li>
                     <li><a href="facts.html">Facts</a></li>
                     <li><a href="quiz.html">Quiz</a></li>
                     <li><a href="about.html" aria-haspopup="true"><span>About</span></a>
@@ -27,16 +38,19 @@
                     </li>
                 </ul>
             </nav>
-
+  
+        
         <div class="fullscreen-bg">
             <video loop autoplay poster="image/background_movie.png" class="fullscreen-bg__video" id="myVideo">
                 <source src="image/background.mp4" type="video/mp4">
             </video>
         </div>
-        
-        
-      <div id="ant-footer" class="stuck">
+ 
         <div class="container">
+           
+        </div>
+        <div id="ant-footer" class="stuck">
+                <div class="container">
                 <div id="ant-1" >
                     <p class="scientific">Atta cephalotes</p>
                     <p class="common">Leafcutter Ant</p>
@@ -49,9 +63,8 @@
                     <p class="scientific">Oecophylla smaragdina</p>
                     <p class="common">Australian Weaver Ant</p>
                 </div>
-                
         </div>
-          <div id="ant-4">
+            <div id="ant-4">
                     <input name="un-mute" id="un-mute" type="checkbox">
                     <label for="un-mute" class="mute">
                         <img src="image/unmute.png" alt="unmute.png" title="Unmute/speaker icon">
@@ -60,13 +73,9 @@
                         <img src="image/mute.png" alt="mute.png" title="Mute icon">
                     </label>
                 </div>
-      </div>  
-        
-      
-       
+        </div>
     
-<script src="js/jquery.min.js"></script>
-<script src="js/doubletaptogo.min.js"></script>
+
 <script>
 	$( function()
 	{
@@ -89,8 +98,9 @@
                 };
     
 </script>
-  
 
-    </body>
+
+        
+</body>
 
 </html>
