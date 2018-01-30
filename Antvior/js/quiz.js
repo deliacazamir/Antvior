@@ -99,13 +99,15 @@
     return qElement;
   }
   
+  
+  
   // Creates a list of the answer choices as radio inputs
   function createRadios(index) {
-    var radioList = $('<ul>');
+    var radioList = $('<ul style="list-style-type: none;align-items: center; margin: 0;padding-right: 80%;">');
     var item;
     var input = '';
     for (var i = 0; i < questions[index].choices.length; i++) {
-      item = $('<li>');
+      item = $('<li style="display: flex;align-items: center;">');
       input = '<input type="radio" name="answer" value=' + i + ' />';
       input += questions[index].choices[i];
       item.append(input);

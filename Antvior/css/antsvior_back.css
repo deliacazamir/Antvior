@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.container{
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 65px;
+    position: fixed;
+    
+}
+
+#ant-1 {
+        padding-left: 65px;
+	height:60px;
+        cursor: pointer;
+	background-position: 0 0;
+        background: url(../image/ants_sprite.png) no-repeat 0 0 transparent;
+}
+
+#ant-2 {
+        padding-left: 65px;
+	height:60px;
+	background: url(../image/ants_sprite.png) no-repeat 0 210 transparent;
+        
+}
+
+#ant-3 {
+        height:60px;
+	background-position: 0 -200px;
+
+}
+
+#ant-1:hover {
+	background-position: 0 -210px;
+}
+#ant-2:hover {
+	background-position: 0 -410px;
+}
+#ant-3:hover {
+	background-position: 0 -510px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    height: 100%;
+    background: url(../image/background.jpg) no-repeat center fixed; 
+    background-size: cover;
+}
+
+.header {
+    background-color: #9933CC;
+    color: #ffffff;
+    padding: 15px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+article {
+  margin: auto;
+  padding: 0 10%;
+  font-family: sans-serif;
+  height:100%;
+  max-width: 800px;
+}
+
+article p {
+  text-align: justify;
+  color: #fff4a3; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 48px; 
+  margin: 0;
+  
+}
+
+h2 { font-size: 30px; letter-spacing: -1px; color: whitesmoke; text-transform: uppercase; text-shadow: 1px 1px 0 #000; margin: 10px 0 24px; text-align: center; line-height: 50px; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+  text-align: center;
+}
+
+nav {
+  background-color: #9933CC;
+  margin: 0.5em 0;
+}
+
+nav a {
+      
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  text-transform: uppercase;
+  
+}
+
+nav a:hover {
+  color: black;
+  background-color: whitesmoke;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 50px;
+}
+
+
+.navbar ul {
+  font-size: 0;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding:20px;
+  position: relative;
+}
+
+.navbar ul li a{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-right:.5em;
+  color: #f2f2f2;
+  float: left;
+  display: block;
+  text-align: center;
+  
+}
+
+.navbar ul li ul {
+  display: none;
+}
+.navbar ul li:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+
+
+.simulation {
+		  width: 600px;
+		  height: 600px;
+		  border: 1px solid #DEDEDE;
+		  display: block;
+		  margin: 0 auto;
+		  padding: 10px;
+		  margin-bottom:20px;
+		}
+                
+                
+canvas{
+    border: 0px;
+}            

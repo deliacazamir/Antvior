@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang='en'  manifest="antvior.appcache">
+
+    <head>
+    
+   
+	<title>Antvior</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/antsvior.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+        <script src="canvas-handler.js"></script>
+        <script src="ant.js"></script>
+        <script src="food.js"></script>
+        <script src="pheromone.js"></script>
+        <script src="ant-sim.js"></script>
+        <script src="test.js"></script>
+
+
+		
+    </head>
+    
+    
+<body>
+  
+    <div class="row">
+    <canvas id='contMainCanvas' width="800" height="765" style="background-image:url('desert.png');background-size:cover;"></canvas>
+    </div>
+    
+    <div class="row"> 
+        <button id="addant" type="button">Add ant</button>
+        <button id="save" type="button">Save</button>
+        <button id="saveImage" type="button">Save Image</button>
+    </div>
+
+<div class="row"> 
+  <div class="column">
+    <button id="addfood" type="button" style="display:none;">Add food</button>
+    <image id="ant" src="ant.png" style="display:none;"/>
+  </div>
+</div>
+
+
+        
+            
+</body>  
+</html>

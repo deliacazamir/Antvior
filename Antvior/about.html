@@ -1,109 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html  manifest="antvior.appcache">
 
-<head>
-	<title>Antivior</title>
+    <head>
+        <title>Antivior</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/antsvior.css">
-        <link rel="stylesheet" type="text/css" href="css/about.css">
-        <link rel="stylesheet" type="text/css" href="css/video.css">
+    </head>
 
-        <script src = "js/antsvior.js" type = "text/javascript"></script>
-</head>
-
-<body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">You ANT Seen Nothing</a>
-        <a href="facts.html">Fun With Ants</a>
-        <a href="game.html">Game</a>
-      </nav>
-    </header>
+    <body style="background: url('image/background_movie.png') center center / cover no-repeat;">
+        
     
-    <div class="wrapper row2">
-  <div id="container">
-    <section class="clear">
-      <div class="one_third">
-        <h2>1. They have superhuman strength!</h2>
-        <p>Yes, you did read that correctly. Ants are ridiculously strong. They have the ability to carry between 10 and 50 times their own body weight!  The amount an ant can carry depends on the species. The Asian weaver ant, for example, can lift 100 times its own mass.
-            Why are ants strong?
-        This amazing strength is a result of their small size believe it or not. The Arizona State University report that because of their small size, ants muscles have a greater cross-sectional area relative to their body size compared to larger animals. This means they can produce more force.</p>
-      </div>
-      <div class="one_third">
-        <h2>2. Ants don’t have lungs</h2>
-        <p>Due to their small size, ants don’t have the room to accommodate a complex respiratory system such as ours. Instead, they have their own ways of respiration to help transport oxygen around their bodies.
-            How do ants breathe?
-        Ants breathe in oxygen through spiracles which are a series of holes located around the sides of their bodies.
-        The spiracles are connected through a network of tubes which help distribute the oxygen to almost every cell in their body.
-        Their movement helps the oxygen to circulate through the tubes, with the released carbon dioxide exiting through said tubes as well.</p>
-      </div>
-      <div class="one_third lastbox">
-        <h2>3. Ants don’t have ears</h2>
-        <p>Unlike other pests such as rats, ants don’t have ears. But that doesn’t mean they are deaf.
-            How do ants hear?
-            Ants use vibrations to hear, using it when foraging for food or as an alarm signal. They use the vibrations in the ground to hear by picking them up in the subgenual organ which is located below the knee.</p>
-      </div>
-    </section>
-
-      <section class="clear">
-      <div class="two_third">
-        <h2>4.There are a lot of ants in the world</h2>
-        <p>I think the phrase “a lot” is an understatement when describing the amount of ants current in existence. To put things in perspective, it is estimated that there are around 1 million ants for every 1 human in the world!
-        Ants have pretty much conquered the entire globe. With the exception of Antarctica, the Arctic, and a handful of islands, there are at least one native species found on every continent.
-        Entomologist Ted Schultz says that the ants presence across the world is “arguably the greatest success story in the history of terrestrial metazoa”.</p>
-      </div>
-      <div class="one_third lastbox">
-        <h2>5. Some ant species are Asexual</h2>
-        <p>Rather than going down the traditional route of reproduction, some Amazonian ants have taken to reproduce via cloning. It is reported that the queen ants copy themselves to genetically produce daughters, resulting in a colony with no males.</p>
-      </div>
-    </section>
-    
-    <section class="clear">
-      <div class="one_third">
-        <h2>6. Ants are farmers</h2>
-        <p>You may be thinking “what?!”. But it’s true, besides humans, ants are the only creatures which will farm other creatures.
-        Just like we raise cows, sheep, pigs, chicken and fish in order to obtain a food source, ants will do the same with other insects. The most common occurrence of this is with aphids.
-        Ants will protect aphids from natural predators, and shelter them in their nests from heavy rain showers in order to gain a constant supply of honeydew.</p>
-      </div>
-      <div class="two_third lastbox">
-        <h2>7. Ants have two stomachs</h2>
-        <p>That’s right ants have two stomachs, and it’s not because they are greedy. One of their stomachs is for holding food for their own consumption, whilst the second one is to hold food to be shared with other ants.
-        This process is known as trophallaxis and allows a colony to work extremely efficiently. It allows for the ants who forage for food to feed those which stay behind and tend to the duties of the queen and the nest.</p>
-      </div>
-    </section>
-   
-    <section class="last clear">
-      <div class="three_third">
-        <h2>8. Ants can swim</h2>
-        <p>Well, not all ants can swim, it depends on the species. They haven’t mastered the butterfly or breaststroke, yet, but they do have the ability to survive in water by using their own version of the doggy paddle, and can also float for long periods of time.
-        To put it simply, ants are amazing survivors. Not only can they hold their breath underwater for long periods of time, but they will also build lifeboats to survive floods.</p>
-        <p>Some species of ant, such as the Polyergus Lucidus are known as slave-making ants. They invade neighbouring ant colonies, capturing its inhabitants and forcing them to work for them, this process is known as slave raiding.
-        Slave-making ants are specialized to parasite a single species or a group of related species which are often close relatives of them. The captured ants will work as if they were in their own colony while the slave-making workers will only concentrate on replenishing their labour force.
-        Slave-making ants come in two formats: permanent social parasites and facultative slave-makers.</p>
-      </div>
-    </section>
-      
-       <section class="last clear">
-         <h2>What would you be more interested in?</h2>
-         <p>What BBC says about ants:</p>
-        <div class ="video-container">
-         <iframe align="middle" src="https://www.youtube.com/embed/SdpGAdB_zpc?autoplay=0"></iframe>
+            <nav id="nav" role="navigation">
+                <a href="#nav" title="Show navigation">Show navigation</a>
+                <a href="#" title="Hide navigation">Hide navigation</a>
+                <ul class="clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game.html">Simulator</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html" aria-haspopup="true"><span>About</span></a>
+                        <ul>
+                            <li><a href="https://www.facebook.com/delia.cazamir">Delia Cazamir</a></li>
+                            <li><a href="https://www.facebook.com/ana.mariaa.30">Ana-Maria Dascal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+  
+        
+        <div class="fullscreen-bg">
+            <video muted loop autoplay poster="image/background_movie.png" class="fullscreen-bg__video" id="myVideo">
+                <source src="image/background.mp4" type="video/mp4">
+            </video>
         </div>
         
-         <p>Or how is the TedX presentation:</p>
-        <div class = "video-container" >
-         <iframe align="middle" src="https://www.youtube.com/embed/vG-QZOTc5_Q"></iframe>
+      <div id="ant-footer" class="stuck">
+                <div class="container">
+                <div id="ant-1" >
+                    <p class="scientific">Atta cephalotes</p>
+                    <p class="common">Leafcutter Ant</p>
+                </div>
+                <div id="ant-2" >
+                    <p class="scientific">Pheidole dentata</p>
+                    <p class="common">Big-Headed Ant</p>
+                </div>
+                <div id="ant-3" >
+                    <p class="scientific">Oecophylla smaragdina</p>
+                    <p class="common">Australian Weaver Ant</p>
+                </div>
         </div>
-  </section>
-  </div>
-</div>
-
+          <div id="ant-4">
+                    <input name="un-mute" id="un-mute" type="checkbox">
+                    <label for="un-mute" class="mute">
+                        <img src="image/unmute.png" alt="unmute.png" title="Unmute/speaker icon">
+                    </label> 
+                    <label for="un-mute" class="unmute">
+                        <img src="image/mute.png" alt="mute.png" title="Mute icon">
+                    </label>
+          </div>
+        </div> 
+        
+       <canvas height='1000' width='1500' id='mycanvas'></canvas> 
+       <div style="display:none;">
+        <img id="source" src="image/siteCosmin.png" width="1000" height="1000">
+       </div>
     
-    <footer>
-        <p>Antvior &copy; 2017 Delia Cazamir, Ana-Maria Dascalu</p>
-    </footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/doubletaptogo.min.js"></script>
+<script>
+	$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+        
+        var un_mute = document.getElementById('un-mute');
 
+        un_mute.onclick = function() {
+                var video=document.getElementById("myVideo");
+                if(video.muted)
+                {
+                  console.log('Is muted.Turning on');
+                  video.muted = false;
+                } else {
+                  
+                    console.log('Is not muted.Turning off');
+                  video.muted = true;
+                }
+                };
+    
+</script>
+           
+<script> 
+    
+    var canvas = document.getElementById("mycanvas");
+    ctx = canvas.getContext('2d');
+    var img = document.getElementById('source');
+    
+    ctx.drawImage(img,0,0);
+    /* Canvas width and height */
+    var cwidth = 1000;
+    var cheight = 1000;
+    
+    
+    
+    /* Create empty 2d array */
+    var array = new Array(cwidth);
+    for (var i = 0; i < cwidth; i++) {
+        array[i] = new Array(cwidth);
+    }
+    
+    /* Directional Variables */
+    var RIGHT = "right";
+    var LEFT = "left";
+    var UP = "up";
+    var DOWN = "down";
+    
+    /* Metrics */
+    var rectDiameter = 10;
+    var x = cwidth / 2;
+    var y = cheight / 2;
+    var interval = 1; //milliseconds
+    var direction = UP;
+    
+    
+    
+    /* RULES */
+    /* 
+        - At a white square, turn 90° right, flip the color of the square, move forward one unit
+        - At a black square, turn 90° left, flip the color of the square, move forward one unit
+    */
+    
+    
+    /* First Step will be */
+    /* 
+        Draw first rect in the middle of the canvas - ant facing up
+        It lands on a white square first
+        Change direction
+        Colour in rect
+        Move in direction
+    */
+    
+    
+    /* Run this code every "interval" seconds */
+    setInterval(function(){
+        
+        /* Check array to determine what direction to turn */
+        if(array[x][y] === 0){
+            /* White square, turn 90° right */
+            if(direction == UP){
+                direction = RIGHT;
+            }else if(direction == LEFT){
+                direction = UP;
+            }else if(direction == DOWN){
+                direction = LEFT;
+            }else{
+                /* direction is RIGHT, change to DOWN */
+                direction = DOWN;
+            }
+        }
+        else {
+            /* array[x][y] === 1 */
+            /* Coloured square, turn 90° left */
+            if(direction == UP){
+                direction = LEFT;
+            }else if(direction == LEFT){
+                direction = DOWN;
+            }else if(direction == DOWN){
+                direction = RIGHT;
+            }else{
+                /* Direction is RIGHT, change to UP */
+                direction = UP;
+            }
+        }
+        
+        /* Flip the colour of the square */
+        if(array[x][y] === 0){
+            ctx.fillStyle = "#2f2f2f";
+            ctx.clearRect(x, y + rectDiameter, rectDiameter, rectDiameter);
+            ctx.clearRect(y, x + rectDiameter, rectDiameter, rectDiameter);
+            /* Record that rect has been filled */
+            array[x][y] = 1;
+        }else{
+            ctx.fillStyle = "#ffffff";
+            ctx.clearRect(x, y + rectDiameter, rectDiameter, rectDiameter);
+            ctx.clearRect(y, x + rectDiameter, rectDiameter, rectDiameter);
+            /* Record that rect has been filled */
+            array[x][y] = 0;
+        }
+        
+        /* Move forward one unit */
+        if(direction == RIGHT){
+            //move x to the right
+            x += rectDiameter;
+            //no need to change y
+        }
+        else if(direction == UP){
+            //no need to change x
+            //move y up
+            y += rectDiameter;
+        }
+        else if(direction == LEFT){
+            //move x to the left
+            x -= rectDiameter;
+            //no need to change y
+        }
+        else{
+            //direction == DOWN
+            //no need to change x
+            //move y down
+            y -=rectDiameter;
+        }
+        
+        /* To represent the ant - Colour the current rect red */
+        ctx.fillStyle="#ff0000";
+        ctx.fillRect(x, y + rectDiameter, rectDiameter, rectDiameter);
+        ctx.fillRect(y, x + rectDiameter, rectDiameter, rectDiameter);
+        ctx.fillRect(y+rectDiameter, x + rectDiameter, rectDiameter, rectDiameter);
+        ctx.fillRect(y, x+y + rectDiameter, rectDiameter, rectDiameter);
+        
+    }, interval)
+    	
+ </script>
+      
 </body>
 </html>

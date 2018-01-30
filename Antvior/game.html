@@ -1,43 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html manifest="antvior.appcache">
+  
 
-<head>
-	<title>Antivior</title>
+
+    <head>
+        <title>Antvior</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/antsvior.css">
-        <link rel="stylesheet" type="text/css" href="css/quiz.css">
-        <script src = "js/antsvior.js" type = "text/javascript"></script>
-</head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+        <script src="js/doubletaptogo.min.js"></script>
+        <script src="canvas-handler.js"></script>
+        <script src="ant.js"></script>
+        <script src="food.js"></script>
+        <script src="pheromone.js"></script>
+        <script src="ant-sim.js"></script>
+        <script src="test.js"></script>
+    </head>
 
-<body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">You ANT Seen Nothing</a>
-        <a href="facts.html">Fun With Ants</a>
-        <a href="game.html">Game</a>
-      </nav>
-    </header>
+    <body style="background: url('image/background_movie.png') center center / cover no-repeat;">
+        
     
-     <div id='container' style="margin-top: 50px;">
-        <h1>Ants quiz</h1>
-   			<br/>
-  			<div id='quiz'></div>
-    		<div class='button' id='next'><a href='#'>Next</a></div>
-    		<div class='button' id='prev'><a href='#'>Prev</a></div>
-    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
-    	</div>
+            <nav id="nav" role="navigation">
+                <a href="#nav" title="Show navigation">Show navigation</a>
+                <a href="#" title="Hide navigation">Hide navigation</a>
+                <ul class="clearfix">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="game.html">Simulator</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html" aria-haspopup="true"><span>About</span></a>
+                        <ul>
+                            <li><a href="https://www.facebook.com/delia.cazamir">Delia Cazamir</a></li>
+                            <li><a href="https://www.facebook.com/ana.mariaa.30">Ana-Maria Dascal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+  
+        
+        <div id="container">
+          <iframe src="game/test.html" class="simulation" id="2d" marginwidth="0" marginheight="0" scrolling="no">
+          </iframe>
+        </div>
+ 
+        <div id="ant-footer" class="stuck">
+                <div class="container">
+                <div id="ant-1" >
+                    <p class="scientific">Atta cephalotes</p>
+                    <p class="common">Leafcutter Ant</p>
+                </div>
+                <div id="ant-2" >
+                    <p class="scientific">Pheidole dentata</p>
+                    <p class="common">Big-Headed Ant</p>
+                </div>
+                <div id="ant-3" >
+                    <p class="scientific">Oecophylla smaragdina</p>
+                    <p class="common">Australian Weaver Ant</p>
+                </div>
+        </div>
+        </div>
+    
 
-		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-		<script type='text/javascript' src='js/quiz.js'></script>
-      
+<script>
+	$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+        
+        var un_mute = document.getElementById('un-mute');
+
+        un_mute.onclick = function() {
+                var video=document.getElementById("myVideo");
+                if(video.muted)
+                {
+                  console.log('Is muted.Turning on');
+                  video.muted = false;
+                } else {
+                  
+                    console.log('Is not muted.Turning off');
+                  video.muted = true;
+                }
+                };
+    
+</script>
 
 
-    <footer>
-        <p>Antvior &copy; 2017 Delia Cazamir, Ana-Maria Dascalu</p>
-    </footer>
-
+        
 </body>
-</html>
 
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html  manifest="antvior.appcache">
+
+    <head>
+        <title>Antivior</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="css/antsvior.css">
+        <link rel="stylesheet" type="text/css" href="css/quiz.css">
+    </head>
+
+    <body>
+        
+    
+            <nav id="nav" role="navigation">
+                <a href="#nav" title="Show navigation">Show navigation</a>
+                <a href="#" title="Hide navigation">Hide navigation</a>
+                <ul class="clearfix">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game.html">Simulator</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html" aria-haspopup="true"><span>About</span></a>
+                        <ul>
+                            <li><a href="https://www.facebook.com/delia.cazamir">Delia Cazamir</a></li>
+                            <li><a href="https://www.facebook.com/ana.mariaa.30">Ana-Maria Dascal</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        <div class="fullscreen-bg" style="background-image: url('image/ants-background.jpg');">
+           
+        </div>
+        
+        
+        <div id='container' style="margin-top: 50px;">
+            <h1>Ants quiz</h1>
+            <br/>
+            <div id='quiz'></div>
+    		<div class='button' id='next'><a href='#'>Next</a></div>
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
+    	</div>
+        
+      <div id="ant-footer" class="stuck">
+        <div class="container">
+                <div id="ant-1" >
+                    <p class="scientific">Atta cephalotes</p>
+                    <p class="common">Leafcutter Ant</p>
+                </div>
+                <div id="ant-2" >
+                    <p class="scientific">Pheidole dentata</p>
+                    <p class="common">Big-Headed Ant</p>
+                </div>
+                <div id="ant-3" >
+                    <p class="scientific">Oecophylla smaragdina</p>
+                    <p class="common">Australian Weaver Ant</p>
+                </div>
+                
+        </div>
+         
+      </div>  
+        
+      
+       
+    
+<script src="js/jquery.min.js"></script>
+<script src="js/doubletaptogo.min.js"></script>
+<script type='text/javascript' src='js/quiz.js'></script>
+<script>
+	$( function()
+	{
+		$( '#nav li:has(ul)' ).doubleTapToGo();
+	});
+        
+        var un_mute = document.getElementById('un-mute');
+
+        un_mute.onclick = function() {
+                var video=document.getElementById("myVideo");
+                if(video.muted)
+                {
+                  console.log('Is muted.Turning on');
+                  video.muted = false;
+                } else {
+                  
+                    console.log('Is not muted.Turning off');
+                  video.muted = true;
+                }
+                };
+    
+</script>
+  
+
+    </body>
+
+</html>
