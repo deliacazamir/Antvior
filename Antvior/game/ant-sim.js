@@ -32,8 +32,8 @@ var AntSim;
 		
 		'getRandomPos':function(){
                            
-                        min = this._height/2;
-                        max = this._height-50;
+                        min = this._height/2+200;
+                        max = this._height-200;
 			return {
                                  
 				'x': Math.random() * this._width,
@@ -85,14 +85,7 @@ var AntSim;
 				ctx.arc(this._height /2+100,this._width/2+100, NEST_SIZE, 0, Math.PI * 2);
 			}, this), true, true);
                   
-                        
-                      /*  this._ch.drawImage(_.bind(function(){
-                                                    var ctx=this._ch.getContext();
-                                                    ctx.beginPath();
-                                                    var img=document.getElementById("desert");
-                                                    ctx.drawImage(img,this._width/2, this._height/2 );
-                                                    },this));
-                    */
+                       
 		},
                 
                 'saveData':function()

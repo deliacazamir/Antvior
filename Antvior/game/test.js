@@ -1,5 +1,6 @@
 $(function(){
     
+    
         function download(text, name, type) {
             var a = document.createElement("a");
             var file = new Blob([text], {type: type});
@@ -8,7 +9,10 @@ $(function(){
             a.click();
         }
     
+        
+        //se init canvasul si furnicile
 	var ch = new CanvasHandler($('#contMainCanvas').get(0));
+        
 	var antSim = new AntSim(ch);
 	$("#contMainCanvas").click(ch.handleMouseDown);
 	var lastTime;
@@ -40,6 +44,7 @@ $(function(){
             ch.resetFrame();
         }
         );
+        
         
         
 	this.timer = setInterval(_.bind(antSim.update, antSim), 1000 / 24);
